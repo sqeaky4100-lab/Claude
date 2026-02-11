@@ -1,0 +1,18 @@
+This is an example file showing where to place your user export files.
+
+EXAMPLE WORKFLOW:
+1. Export user accounts from Active Directory:
+   
+   Get-ADUser -Filter * -Properties DisplayName,EmailAddress,LastLogonDate,Enabled |
+       Select-Object Name,SamAccountName,DisplayName,EmailAddress,LastLogonDate,Enabled |
+       Export-Csv "users-export-2024-02-11.csv" -NoTypeInformation
+
+2. Place the CSV file in this directory (data/user-exports/)
+
+3. Ask Claude questions like:
+   "Review the user export at data/user-exports/users-export-2024-02-11.csv
+    and identify any inactive accounts that should be disabled."
+
+4. Claude will analyze the data and provide recommendations
+
+You can delete this example file once you understand the workflow.
