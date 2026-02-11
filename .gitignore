@@ -1,0 +1,33 @@
+# Sensitive Information
+# Exclude actual production data that may contain sensitive information
+*.secrets
+*password*
+*credential*
+
+# Exclude actual production files (remove these lines when you want to commit real data)
+# Uncomment below to prevent accidental commits of sensitive data
+# /data/gpo-reports/*.html
+# /data/gpo-reports/*.xml
+# /data/user-exports/*.csv
+# /data/group-exports/*.csv
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Logs
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

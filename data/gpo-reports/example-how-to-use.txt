@@ -1,0 +1,16 @@
+This is an example file showing where to place your GPO reports.
+
+EXAMPLE WORKFLOW:
+1. Export a GPO report on your Windows domain controller or management workstation:
+   
+   Get-GPOReport -All -ReportType Html -Path "all-gpos-2024-02-11.html"
+
+2. Place the file in this directory (data/gpo-reports/)
+
+3. Ask Claude to analyze it:
+   "Please analyze the GPO report at data/gpo-reports/all-gpos-2024-02-11.html
+    and identify any security issues or misconfigurations."
+
+4. Claude will review the file and provide recommendations
+
+You can delete this example file once you understand the workflow.
